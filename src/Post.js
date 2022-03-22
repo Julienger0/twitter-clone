@@ -11,16 +11,16 @@ function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post_avatar">
-        <Avatar>J</Avatar>
+        <Avatar src={avatar}></Avatar>
       </div>
       <div className="post_body">
         <div className="post_header">
           <div className="post_headerText">
             <h3>
-              Julien Gérard{" "}
+              {displayName}
               <span className="post_headerSpecial">
                 <CheckCircleIcon className="post_badge" />
-                @julienger
+                {username}
               </span>
             </h3>
           </div>
@@ -28,10 +28,7 @@ function Post({ displayName, username, verified, text, image, avatar }) {
             <p>vfdwfnkvfklvfl,mvwfdv,mwf,fbvdfùmvmwfd, ùfv</p>
           </div>
         </div>
-        <img
-          src="https://images.unsplash.com/photo-1647821172233-d1b0d2926b1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60.jpg"
-          alt=""
-        />
+        <img src={image} alt="" />
         <div className="post_footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
