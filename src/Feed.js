@@ -19,6 +19,7 @@ function Feed() {
         <h2>Home</h2>
       </div>
       <TweetBox />
+
       {posts.map((post) => (
         <Post
           key={post.text}

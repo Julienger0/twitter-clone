@@ -25,7 +25,7 @@ function Post({ displayName, username, verified, text, image, avatar }) {
             </h3>
           </div>
           <div className="post_headerDescription">
-            <p>vfdwfnkvfklvfl,mvwfdv,mwf,fbvdfùmvmwfd, ùfv</p>
+            <p>{text}</p>
           </div>
         </div>
         <img src={image} alt="" />
